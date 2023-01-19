@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text3</title>
+    <Style>
+        body{
+            background-color: black;
+            color: aliceblue;
+        }
+        h1 {
+            color: aliceblue;
+        }
+
+    </Style>
+</head>
+<body>
+    <h1>ola</h1>
+    <Script>
+        var nome = prompt('qual seu nome ?')
+        document.write( ` seu nome tem ${nome.length} letras ${nome} <br/>`)
+        document.write( `seu nome em maiúsculo é ${nome.toUpperCase()} e em minusculo é
+        ${nome.toLowerCase()} <br/>`)
+
+        var num = Number(prompt('digite o numero'))
+        //document.write( num.toFixed(3) + '<br/>' )
+        //document.write( num.toFixed(3).replace(',','.') + '<br/>' )
+        //alert( num.toLocaleString ( 'pt-BR',  {style : 'currency', curruency : 'BRL' }) )
+        document.write(new Intl. NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }). format(num));
+    </Script>
+    
+</body>
+</html>

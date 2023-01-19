@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if pais</title>
+    <style>
+        
+    body{
+        height: center ;
+        line-height: 50px ;
+        text-align: center ;
+        
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Paises</h1>
+    <input type="text" name = "txtn" id="txtn">
+    <input type="button" value="compilar" onclick="compilar() ">
+    <div id="res"> resultado </div>
+    
+    <script>
+       function compilar (){
+            
+            var pais =  window.document.getElementById('txtn')
+            var res = document.getElementById('res')
+            var paiss = String(pais.value)
+
+            if ( 'brasil'.includes(paiss)) {
+
+                res.innerHTML = ' Você é brasileiro !'
+            
+            }else{
+                res.innerHTML = 'você é  <strong> estrangeiro </strong>'
+            }
+            
+        }
+    </script>
+</body>
+</html>
